@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DCE65D32343EC5400BDFD63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE65D22343EC5400BDFD63 /* AppDelegate.swift */; };
+		0DCE65D52343EC5400BDFD63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE65D42343EC5400BDFD63 /* ViewController.swift */; };
+		0DCE65D72343EC5500BDFD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE65D62343EC5500BDFD63 /* Assets.xcassets */; };
+		0DCE65DA2343EC5500BDFD63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE65D82343EC5500BDFD63 /* Main.storyboard */; };
+		0DCE65E62343EC5500BDFD63 /* Dark_CirclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE65E52343EC5500BDFD63 /* Dark_CirclesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DCE65E22343EC5500BDFD63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DCE65C72343EC5400BDFD63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCE65CE2343EC5400BDFD63;
+			remoteInfo = "Dark Circles";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DCE65CF2343EC5400BDFD63 /* Dark Circles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Circles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DCE65D22343EC5400BDFD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0DCE65D42343EC5400BDFD63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DCE65D62343EC5500BDFD63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DCE65D92343EC5500BDFD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DCE65DB2343EC5500BDFD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DCE65DC2343EC5500BDFD63 /* Dark_Circles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dark_Circles.entitlements; sourceTree = "<group>"; };
+		0DCE65E12343EC5500BDFD63 /* Dark CirclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark CirclesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DCE65E52343EC5500BDFD63 /* Dark_CirclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dark_CirclesTests.swift; sourceTree = "<group>"; };
+		0DCE65E72343EC5500BDFD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DCE65CC2343EC5400BDFD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DCE65DE2343EC5500BDFD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DCE65C62343EC5400BDFD63 = {
+			isa = PBXGroup;
+			children = (
+				0DCE65D12343EC5400BDFD63 /* Dark Circles */,
+				0DCE65E42343EC5500BDFD63 /* Dark CirclesTests */,
+				0DCE65D02343EC5400BDFD63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DCE65D02343EC5400BDFD63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE65CF2343EC5400BDFD63 /* Dark Circles.app */,
+				0DCE65E12343EC5500BDFD63 /* Dark CirclesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DCE65D12343EC5400BDFD63 /* Dark Circles */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE65D22343EC5400BDFD63 /* AppDelegate.swift */,
+				0DCE65D42343EC5400BDFD63 /* ViewController.swift */,
+				0DCE65D62343EC5500BDFD63 /* Assets.xcassets */,
+				0DCE65D82343EC5500BDFD63 /* Main.storyboard */,
+				0DCE65DB2343EC5500BDFD63 /* Info.plist */,
+				0DCE65DC2343EC5500BDFD63 /* Dark_Circles.entitlements */,
+			);
+			path = "Dark Circles";
+			sourceTree = "<group>";
+		};
+		0DCE65E42343EC5500BDFD63 /* Dark CirclesTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE65E52343EC5500BDFD63 /* Dark_CirclesTests.swift */,
+				0DCE65E72343EC5500BDFD63 /* Info.plist */,
+			);
+			path = "Dark CirclesTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DCE65CE2343EC5400BDFD63 /* Dark Circles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DCE65EA2343EC5500BDFD63 /* Build configuration list for PBXNativeTarget "Dark Circles" */;
+			buildPhases = (
+				0DCE65CB2343EC5400BDFD63 /* Sources */,
+				0DCE65CC2343EC5400BDFD63 /* Frameworks */,
+				0DCE65CD2343EC5400BDFD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dark Circles";
+			productName = "Dark Circles";
+			productReference = 0DCE65CF2343EC5400BDFD63 /* Dark Circles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DCE65E02343EC5500BDFD63 /* Dark CirclesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DCE65ED2343EC5500BDFD63 /* Build configuration list for PBXNativeTarget "Dark CirclesTests" */;
+			buildPhases = (
+				0DCE65DD2343EC5500BDFD63 /* Sources */,
+				0DCE65DE2343EC5500BDFD63 /* Frameworks */,
+				0DCE65DF2343EC5500BDFD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DCE65E32343EC5500BDFD63 /* PBXTargetDependency */,
+			);
+			name = "Dark CirclesTests";
+			productName = "Dark CirclesTests";
+			productReference = 0DCE65E12343EC5500BDFD63 /* Dark CirclesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DCE65C72343EC5400BDFD63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Aurel Tyson";
+				TargetAttributes = {
+					0DCE65CE2343EC5400BDFD63 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					0DCE65E02343EC5500BDFD63 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0DCE65CE2343EC5400BDFD63;
+					};
+				};
+			};
+			buildConfigurationList = 0DCE65CA2343EC5400BDFD63 /* Build configuration list for PBXProject "Dark Circles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DCE65C62343EC5400BDFD63;
+			productRefGroup = 0DCE65D02343EC5400BDFD63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DCE65CE2343EC5400BDFD63 /* Dark Circles */,
+				0DCE65E02343EC5500BDFD63 /* Dark CirclesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DCE65CD2343EC5400BDFD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCE65D72343EC5500BDFD63 /* Assets.xcassets in Resources */,
+				0DCE65DA2343EC5500BDFD63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DCE65DF2343EC5500BDFD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DCE65CB2343EC5400BDFD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCE65D52343EC5400BDFD63 /* ViewController.swift in Sources */,
+				0DCE65D32343EC5400BDFD63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DCE65DD2343EC5500BDFD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCE65E62343EC5500BDFD63 /* Dark_CirclesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DCE65E32343EC5500BDFD63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DCE65CE2343EC5400BDFD63 /* Dark Circles */;
+			targetProxy = 0DCE65E22343EC5500BDFD63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DCE65D82343EC5500BDFD63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DCE65D92343EC5500BDFD63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DCE65E82343EC5500BDFD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0DCE65E92343EC5500BDFD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0DCE65EB2343EC5500BDFD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dark Circles/Dark_Circles.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A6GX9BV832;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Dark Circles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aureltyson.Dark-Circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0DCE65EC2343EC5500BDFD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dark Circles/Dark_Circles.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A6GX9BV832;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Dark Circles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aureltyson.Dark-Circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0DCE65EE2343EC5500BDFD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A6GX9BV832;
+				INFOPLIST_FILE = "Dark CirclesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aureltyson.Dark-CirclesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Circles.app/Contents/MacOS/Dark Circles";
+			};
+			name = Debug;
+		};
+		0DCE65EF2343EC5500BDFD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A6GX9BV832;
+				INFOPLIST_FILE = "Dark CirclesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aureltyson.Dark-CirclesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Circles.app/Contents/MacOS/Dark Circles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DCE65CA2343EC5400BDFD63 /* Build configuration list for PBXProject "Dark Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCE65E82343EC5500BDFD63 /* Debug */,
+				0DCE65E92343EC5500BDFD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DCE65EA2343EC5500BDFD63 /* Build configuration list for PBXNativeTarget "Dark Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCE65EB2343EC5500BDFD63 /* Debug */,
+				0DCE65EC2343EC5500BDFD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DCE65ED2343EC5500BDFD63 /* Build configuration list for PBXNativeTarget "Dark CirclesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCE65EE2343EC5500BDFD63 /* Debug */,
+				0DCE65EF2343EC5500BDFD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DCE65C72343EC5400BDFD63 /* Project object */;
+}
