@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import IOKit.pwr_mgt
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet public weak var window: NSWindow!
     
     // MARK: Attributes
+    
+    private var letMacOSSleep = true
     
     private let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
     private let contextMenu: NSMenu! = constructMenu()
@@ -38,10 +41,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func statusBarButtonClicked(sender: NSStatusBarButton) {
         
         // Current event
-        let lCurrentEvent = NSApp.currentEvent!
+        let currentEvent = NSApp.currentEvent!
         
         // If right click
-        if lCurrentEvent.type == .rightMouseUp {
+        if currentEvent.type == .rightMouseUp {
             
             // Show menu
             self.statusItem.menu = self.contextMenu
@@ -53,7 +56,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         else {
             
-            // TODO: Toggle awake mode
+            // Toggle sleep status
+            self.letMacOSSleep.toggle()
+            
+            // Update sleep mode
+            self.updateSleepMode(allowToSleep: self.letMacOSSleep)
+            
+            // Update icon
+            self.updateIcon(allowToSleep: self.letMacOSSleep)
             
         }
         
@@ -64,9 +74,51 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private class func constructMenu() -> NSMenu {
         
         // Init the menu entries
-        let lMenu = NSMenu()
-        lMenu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-        return lMenu
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        return menu
+        
+    }
+    
+    private func updateSleepMode(allowToSleep: Bool) {
+
+        let assertionLevel = allowToSleep ? kIOPMAssertionLevelOff : kIOPMAssertionLevelOn
+        
+        // Update idle timer
+        var assertionID: IOPMAssertionID = IOPMAssertionID(0)
+        let success = IOPMAssertionCreateWithName(kIOPMAssertPreventUserIdleDisplaySleep as CFString,
+                        IOPMAssertionLevel(assertionLevel),
+                        "reasonForActivity" as CFString,
+                        &assertionID)
+        if success == kIOReturnSuccess {
+            IOPMAssertionRelease(assertionID)
+            
+            NSLog(">> Success !")
+            
+            if self.letMacOSSleep {
+                NSLog(">> The mac can now sleep 😴")
+            }
+            else {
+                NSLog(">> The mac will not sleep anymore 😈")
+            }
+            
+        }
+        else {
+            
+            NSLog(">> Error during assertion creation")
+            
+        }
+        
+    }
+    
+    private func updateIcon(allowToSleep: Bool) {
+        
+        // Menu icon
+        guard let button = self.statusItem.button else {
+            return
+        }
+        
+        button.title = allowToSleep ? "😴" : "😈"
         
     }
     
