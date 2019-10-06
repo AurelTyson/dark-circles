@@ -34,6 +34,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
         
+        // Notification center delegate
+        NSUserNotificationCenter.default.delegate = self
+        
     }
     
     // MARK: Actions
@@ -64,6 +67,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             // Update icon
             self.updateIcon(allowToSleep: self.letMacOSSleep)
+            
+            // Send notification
+            self.sendNotification(allowToSleep: self.letMacOSSleep)
             
         }
         
@@ -119,6 +125,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         button.title = allowToSleep ? "😴" : "😈"
+        
+    }
+    
+    private func sendNotification(allowToSleep: Bool) {
+        
+        // Notification
+        let notification = NSUserNotification()
+        notification.title = "Dark Circles"
+        notification.subtitle = allowToSleep ? "The mac can now sleep 😴" : "The mac will not sleep anymore 😈"
+        notification.deliveryDate = Date(timeIntervalSinceNow: 1)
+
+        // Displaying notification
+        NSUserNotificationCenter.default.deliver(notification)
+        
+    }
+    
+}
+
+extension AppDelegate: NSUserNotificationCenterDelegate {
+    
+    public func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
+        
+        return true
         
     }
     
